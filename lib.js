@@ -1,20 +1,46 @@
 function avg(numbers)
 {
-    let s=numbbers.reduce((prev,curr)=>prev+curr,0);
+    let s=numbers.reduce((prev,curr)=>prev+curr,0);
     return s/numbers.length;
 }
 
 function prime(num)
 {
-    return false;
+    let pon=true;
+    let s=2;
+    if(num>2)
+    {
+        for(;s<num;s++)
+        {
+            if(num%s==0)
+            {
+                pon=false;
+            }
+        }
+    }
+    else if(num<2)
+    {
+        console.log("Prime numbers are Natural Number that larger than 1");
+        exit(1);
+    }
+    else if(num==2)
+    {
+        pon=true;
+    }
+    return pon;
 }
 
 function fact(num)
 {
-    return -1;
+    let result=1;
+    for(;num>1;num--)
+    {
+        result*=num;
+    }
+    return result;
 }
 
-module.export = 
+module.exports = 
 {
     avg,
     prime,
