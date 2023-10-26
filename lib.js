@@ -20,8 +20,8 @@ function prime(num)
     }
     else if(num<2)
     {
-        console.log("Prime numbers are Natural Number that larger than 1");
-        exit(1);
+        console.log("Prime numbers are Natural Number that larger than 1.\n Your input : "+num);
+        return false;
     }
     else if(num==2)
     {
@@ -32,12 +32,19 @@ function prime(num)
 
 function fact(num)
 {
-    let result=1;
-    for(;num>1;num--)
+    if(num>15)
     {
-        result*=num;
+        console.log("Invaild Input. \nPlease input lower than equal to 15. \nYour Input : "+num);
+        return false
     }
-    return result;
+    else{
+        let result=1;
+        for(;num>1;num--)
+        {
+            result*=num;
+        }
+        return result;
+    }
 }
 
 module.exports = 
