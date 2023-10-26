@@ -21,7 +21,7 @@ function prime(num)
     else if(num<2)
     {
         console.log("Prime numbers are Natural Number that larger than 1.\n Your input : "+num);
-        return false;
+        process.exit(1);
     }
     else if(num==2)
     {
@@ -35,7 +35,7 @@ function fact(num)
     if(num>15)
     {
         console.log("Invaild Input. \nPlease input lower than equal to 15. \nYour Input : "+num);
-        return false
+        process.exit(1);
     }
     else{
         let result=1;
