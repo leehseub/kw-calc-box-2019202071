@@ -10,5 +10,8 @@
     "calcbox" : "./main.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest":"^27.2.5"
+  }
 }
