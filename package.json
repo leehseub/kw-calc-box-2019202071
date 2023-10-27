@@ -1,17 +1,17 @@
 {
-  "name": "kw-calc-box-2019202071",
+  "name": "calc-box-2019202071",
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "jest"
   },
-  "bin":{
-    "calcbox" : "./main.js"
+  "bin": {
+    "calcbox": "main.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest":"^27.2.5"
+    "jest": "^27.2.5"
   }
 }
